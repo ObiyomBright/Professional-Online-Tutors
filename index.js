@@ -30,7 +30,8 @@ bookSessionBtn.addEventListener('click', e => {
 
     //Bundle form data
     const  gradeLevel = formData.get('grade_level');
-    const subjects = formData.get('subjects[]').join(', ') || 'None';
+    const subjects = formData.getAll('subject[]') || [];
+    const subjectsText = subjects.length > 0 ? subjects.join(', ') : 'None';
     const classDuration = formData.get('class_duration');
     const numSections = formData.get('num_sections');
     const studentName = formData.get('student_name');
@@ -44,7 +45,7 @@ bookSessionBtn.addEventListener('click', e => {
         Phone: ${phone}
 
         Grade level: ${gradeLevel}
-        Subjects of interest: ${subjects}
+        Subjects of interest: ${subjectsText}
         Class Duration: ${classDuration}
         Number of Section: ${numSections}   
     `.trim();

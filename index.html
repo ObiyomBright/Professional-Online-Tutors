@@ -51,48 +51,107 @@
             <select name="grade_level" required>
                 <option value="">Select grade</option>
                 <option value="Grade 1">Grade 1</option>
-                <option value="Grade 1">Grade 2</option>
-                <option value="Grade 1">Grade 3</option>
-                <option value="Grade 1">Grade 4</option>
-                <option value="Grade 1">Grade 5</option>
-                <option value="Grade 1">Grade 6</option>
-                <option value="Grade 1">Grade 7</option>
-                <option value="Grade 1">Grade 8</option>
-                <option value="Grade 1">Grade 9</option>
-                <option value="Grade 1">Grade 10</option>
-                <option value="Grade 1">Grade 11</option>
+                <option value="Grade 2">Grade 2</option>
+                <option value="Grade 3">Grade 3</option>
+                <option value="Grade 4">Grade 4</option>
+                <option value="Grade 5">Grade 5</option>
+                <option value="Grade 6">Grade 6</option>
+                <option value="Grade 7">Grade 7</option>
+                <option value="Grade 8">Grade 8</option>
+                <option value="Grade 9">Grade 9</option>
+                <option value="Grade 10">Grade 10</option>
+                <option value="Grade 11">Grade 11</option>
             </select>
 
             <label> Subjects of Interest</label>
             <div class="subjects-container">
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Mathematics</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">English</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Science</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">History</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Geography</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Computing</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Art</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Music</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Physical Education
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Mathematics" id="Mathematics">
+                    <label for="Mathematics" class="subjectLabel">Mathematics</label>
                 </div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">French</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Spanish</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Biology</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Chemistry</div>
-                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Physics</div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="English" id="English">
+                    <label for="English" class="subjectLabel">English</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Science" id="Science">
+                    <label for="Science" class="subjectLabel">Science</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="History" id="History">
+                    <label for="History" class="subjectLabel">History</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Geography" id="Geography">
+                    <label for="Geography" class="subjectLabel">Geography</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Computing" id="Computing">
+                    <label for="Computing" class="subjectLabel">Computing</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Art" id="Art">
+                    <label for="Art" class="subjectLabel">Art</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Music" id="Music">
+                    <label for="Music" class="subjectLabel">Music</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Physical Education" id="Physical-Education">
+                    <label for="Physical-Education" class="subjectLabel">Physical Education</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="French" id="French">
+                    <label for="French" class="subjectLabel">French</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Spanish" id="Spanish">
+                    <label for="Spanish" class="subjectLabel">Spanish</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Biology" id="Biology">
+                    <label for="Biology" class="subjectLabel">Biology</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Chemistry" id="Chemistry">
+                    <label for="Chemistry" class="subjectLabel">Chemistry</label>
+                </div>
+                <div class="subject-item">
+                    <input type="checkbox" name="subject[]" value="Physics" id="Physics">
+                    <label for="Physics" class="subjectLabel" >Physics</label>
+                </div>
             </div>
 
             <label> Class Duration: </label>
             <!-- <div class="class-duration"> -->
-            <div class="class-duration"> <input type="radio" name="class_duration" value="1 hour">1 hour</div>
-            <div class="class-duration"> <input type="radio" name="class_duration" value="2 hour">2 hours</div>
-            <div class="class-duration"> <input type="radio" name="class_duration" value="3 hour">3 hours</div>
+            <div class="class-duration" >
+                <input type="radio" name="class_duration" value="1 hour" id="1hour">
+                <label for="1hour" class="subjectLabel" >1 hour</label>
+            </div>
+            <div class="class-duration">
+                <input type="radio" name="class_duration" value="2 hour" id="2hours">
+                <label for="2hours" class="subjectLabel" >2 Hours</label>
+            </div>
+            <div class="class-duration">
+                <input type="radio" name="class_duration" value="3 hour" id="3hours">
+                <label for="3hours" class="subjectLabel" >3 Hours</label>
+            </div>
             <!-- </div> -->
 
             <label>Number of sections: </label>
-            <div class="num-sections"> <input type="radio" name="num_sections" value="1 section">1 Section</div>
-            <div class="num-sections"> <input type="radio" name="num_sections" value="2 section">2 Section</div>
-            <div class="num-sections"> <input type="radio" name="num_sections" value="3 section">3 Section </div>
+            <div class="num-sections">
+                <input type="radio" name="num_sections" value="1 section" id="1section">
+                <label for="1section" class="subjectLabel" >1 Section</label>
+            </div>
+            <div class="num-sections">
+                <input type="radio" name="num_sections" value="2 section" id="2section">
+                <label for="2section" class="subjectLabel" >2 Section</label>
+            </div>
+            <div class="num-sections">
+                <input type="radio" name="num_sections" value="3 section" id="3section">
+                <label for="3section" class="subjectLabel" >3 Section</label>
+            </div>
 
 
             <label>Student Name: </label>

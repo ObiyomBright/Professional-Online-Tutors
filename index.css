@@ -31,6 +31,7 @@ nav {
     position: fixed;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .nav-links {
@@ -281,7 +282,10 @@ form label {
     margin-top: 10px;
 }
 
-form select, form input[type='text'], form input[type='email'], form input[type='tel'] {
+form select,
+form input[type='text'],
+form input[type='email'],
+form input[type='tel'] {
     width: 100%;
     max-width: 400px;
     padding: 8px;
@@ -302,13 +306,30 @@ form select, form input[type='text'], form input[type='email'], form input[type=
     margin-right: 5px;
 }
 
+.subject-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.subjectLabel {
+    font-weight: 500;
+}
+
 .class-duration, .num-sections {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+/* 
+ {
     display: block;
     margin-top: 6px;
     font-size: 18px;
-}
+} */
 
-.class-duration input[type='radio'], .num-sections input[type='radio'] {
+.class-duration input[type='radio'],
+.num-sections input[type='radio'] {
     margin-right: 5px;
 }
 
