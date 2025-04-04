@@ -18,6 +18,7 @@ body {
 
 h1 {
     font-size: 30px;
+    margin-right: 10px;
 }
 
 nav {
@@ -102,8 +103,8 @@ nav {
 
 .hero-content {
     font-size: 25px;
-    font-style: italic;  
-    margin-bottom: 20px; 
+    font-style: italic;
+    margin-bottom: 20px;
 }
 
 .book-session {
@@ -111,6 +112,7 @@ nav {
     text-decoration: none;
     font-size: 25px;
     background-color: white;
+    margin-top: 20px;
     padding: 10px 15px;
     border-radius: 10px;
 }
@@ -153,8 +155,9 @@ nav {
     margin-bottom: 15px;
 }
 
-.benefits-grid, .services-grid {
-    display: flex;  
+.benefits-grid,
+.services-grid {
+    display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 15px;
@@ -162,7 +165,8 @@ nav {
     max-width: 100%;
 }
 
-.benefit-card, .service-card {
+.benefit-card,
+.service-card {
     width: 20%;
     max-width: 250px;
     background-color: white;
@@ -250,8 +254,86 @@ footer {
     padding: 20px;
 }
 
+/* Form */
+.book-session-container {
+    display: none;
+    margin: 20px 10px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    justify-content: center;
+    justify-self: center;
+    width: 80%;
+    max-width: 700px;
+    box-shadow: 5px 5px 5px gray;
+}
+
+.book-session-container h2 {
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+
+form label {
+    font-size: 20px;
+    font-weight: 800;
+    display: block;
+    margin-top: 10px;
+}
+
+form select, form input[type='text'], form input[type='email'], form input[type='tel'] {
+    width: 100%;
+    max-width: 400px;
+    padding: 8px;
+    border-radius: 10px;
+    border: 2px solid gray;
+    margin-top: 5px;
+}
+
+.subjects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.subjects-container input[type='checkbox'] {
+    margin-right: 5px;
+}
+
+.class-duration, .num-sections {
+    display: block;
+    margin-top: 6px;
+    font-size: 18px;
+}
+
+.class-duration input[type='radio'], .num-sections input[type='radio'] {
+    margin-right: 5px;
+}
+
+form button {
+    display: block;
+    margin-top: 10px;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 15px;
+    font-size: 20px;
+    justify-self: center;
+}
+
+form button:hover {
+    background-color: #2b8ac9;
+}
+
+form button:active {
+    background-color: #3498db9c;
+}
+
 @media (max-width: 770px) {
-    
+
     body {
         width: 100%;
     }
@@ -287,7 +369,7 @@ footer {
         color: white;
         padding: 10px 15px;
         border-radius: 10px;
-        
+
     }
 
     .nav-links li a {
@@ -299,7 +381,7 @@ footer {
     }
 
     .hero-heading {
-        font-size: 50px;
+        font-size: 40px;
     }
 
     .hero-content {
@@ -310,8 +392,9 @@ footer {
         font-size: 20px;
     }
 
-    .benefits-grid, .services-grid {
-        display: flex;  
+    .benefits-grid,
+    .services-grid {
+        display: flex;
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
@@ -320,7 +403,8 @@ footer {
         max-width: 100%;
     }
 
-    .benefit-card, .service-card {
+    .benefit-card,
+    .service-card {
         width: 45%;
         box-sizing: border-box;
     }

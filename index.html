@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Unlock academic success with expert online tutoring in Math, Science, and English. Tailored lessons for UK, American, and Canadian curricula. Book a free session today!">
+    <meta name="description"
+        content="Unlock academic success with expert online tutoring in Math, Science, and English. Tailored lessons for UK, American, and Canadian curricula. Book a free session today!">
     <title>Professional Online Tutors </title>
     <link rel="stylesheet" href="index.css">
 </head>
@@ -35,10 +36,76 @@
         <h2 class="hero-heading">Unlock your Academic Potential </h2>
         <p class="hero-content">Personalized Math, Science, and English tutoring tailored to UK, American, and Canadian
             curricula.</p>
-        <a href="#contact" class="book-session">Book Your Free Session</a>
+        <a class="book-session" id="bookSessionBtn">Book Your Free Session </a>
         <!-- </div> -->
 
         <!-- <img src="images/1743374463576.jpg" class="hero-img"> -->
+    </div>
+
+    <!-- Book Session -->
+    <div class="book-session-container">
+        <h2>Online Class Registeration</h2>
+
+        <form id="form">
+            <label>Grade Level: </label>
+            <select name="grade_level" required>
+                <option value="">Select grade</option>
+                <option value="Grade 1">Grade 1</option>
+                <option value="Grade 1">Grade 2</option>
+                <option value="Grade 1">Grade 3</option>
+                <option value="Grade 1">Grade 4</option>
+                <option value="Grade 1">Grade 5</option>
+                <option value="Grade 1">Grade 6</option>
+                <option value="Grade 1">Grade 7</option>
+                <option value="Grade 1">Grade 8</option>
+                <option value="Grade 1">Grade 9</option>
+                <option value="Grade 1">Grade 10</option>
+                <option value="Grade 1">Grade 11</option>
+            </select>
+
+            <label> Subjects of Interest</label>
+            <div class="subjects-container">
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Mathematics</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">English</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Science</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">History</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Geography</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Computing</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Art</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Music</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Physical Education
+                </div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">French</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Spanish</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Biology</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Chemistry</div>
+                <div class="subject-item"><input type="checkbox" name="subject[]" value="Mathematics">Physics</div>
+            </div>
+
+            <label> Class Duration: </label>
+            <!-- <div class="class-duration"> -->
+            <div class="class-duration"> <input type="radio" name="class_duration" value="1 hour">1 hour</div>
+            <div class="class-duration"> <input type="radio" name="class_duration" value="2 hour">2 hours</div>
+            <div class="class-duration"> <input type="radio" name="class_duration" value="3 hour">3 hours</div>
+            <!-- </div> -->
+
+            <label>Number of sections: </label>
+            <div class="num-sections"> <input type="radio" name="num_sections" value="1 section">1 Section</div>
+            <div class="num-sections"> <input type="radio" name="num_sections" value="2 section">2 Section</div>
+            <div class="num-sections"> <input type="radio" name="num_sections" value="3 section">3 Section </div>
+
+
+            <label>Student Name: </label>
+            <input type="text" name="student_name" required>
+
+            <label>Email address: </label>
+            <input type="email" name="email">
+
+            <label>Phone Number: </label>
+            <input type="tel" name="phone" required>
+
+            <button type="submit">Register</button>
+        </form>
     </div>
 
     <!-- Benefits -->
@@ -70,19 +137,20 @@
     <!-- Services Section -->
     <div class="services" id="#services">
         <h2 class="section-head">Master Key Subjects and Ace Exams</h2>
-      
+
         <div class="services-grid">
             <div class="service-card">Mathematics: Algebra, Geometry, Calculus, Statistics</div>
             <div class="service-card">Sciences: Biology, Chemistry, Physics, Environmental Science</div>
             <div class="service-card">English: Grammar, Composition, Literature, Creative Writing</div>
-            <div class="service-card">Exam Prep: GCSE, A-Levels, SAT, ACT, AP, IELTS, TOEFL, GED, IB</div>
+            <div class="service-card">Exam Prep: GCSE, A-Levels, SAT, ACT, AP and more </div>
         </div>
     </div>
 
-     <!-- About Us Section -->
-     <section id="about" class="section">
+    <!-- About Us Section -->
+    <section id="about" class="section">
         <h2>Your Partner in Academic Success</h2>
-        <p>At Professional Online Tutors, we’re dedicated to empowering students worldwide through personalized, high-quality education.</p>
+        <p>At Professional Online Tutors, we’re dedicated to empowering students worldwide through personalized,
+            high-quality education.</p>
     </section>
 
     <!-- Tutors Section -->
@@ -100,38 +168,38 @@
             <li>"Tutors break down complex topics easily!" – Aisha</li>
         </ul>
     </section>
-<!-- Resources Secti
+    <!-- Resources Secti
  on -->
-<section id="resources" class="section">
-    <h2>Your Free Learning Hub</h2>
-    <p>Practice quizzes, study techniques, exam prep guides, and more!</p>
-</section>
+    <section id="resources" class="section">
+        <h2>Your Free Learning Hub</h2>
+        <p>Practice quizzes, study techniques, exam prep guides, and more!</p>
+    </section>
 
-<!-- How It Works Section -->
-<section id="how-it-works" class="section">
-    <h2>Simple Steps to Academic Success</h2>
-    <ul class="features">
-        <li>✔ &nbsp; Schedule a Free Consultation</li>
-        <li>✔ &nbsp; Select Your Curriculum</li>
-        <li>✔ &nbsp; Receive a Personalized Plan</li>
-        <li>✔ &nbsp; Join Interactive Live Sessions</li>
-        <li>✔ &nbsp; Track Your Progress</li>
-    </ul>
-</section>
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="section">
+        <h2>Simple Steps to Academic Success</h2>
+        <ul class="features">
+            <li>✔ &nbsp; Schedule a Free Consultation</li>
+            <li>✔ &nbsp; Select Your Curriculum</li>
+            <li>✔ &nbsp; Receive a Personalized Plan</li>
+            <li>✔ &nbsp; Join Interactive Live Sessions</li>
+            <li>✔ &nbsp; Track Your Progress</li>
+        </ul>
+    </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section">
-    <h2>Ready to Start Your Learning Journey?</h2>
-    <p>📞 +2348034162541, +2348132784094</p>
-    <p>📧 info@professionalonlinetutors.com</p>
-    <p>📍 Online-Based (Google Meet Sessions)</p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2>Ready to Start Your Learning Journey?</h2>
+        <p>📞 +2348034162541, +2348132784094</p>
+        <p>📧 info@professionalonlinetutors.com</p>
+        <p>📍 Online-Based (Google Meet Sessions)</p>
+    </section>
 
     <!-- Footer -->
     <footer>
         <p>© 2025 Professional Online Tutors. All Rights Reserved.</p>
     </footer>
-    
+
     <script src="index.js"></script>
 </body>
 
