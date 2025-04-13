@@ -86,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const phone = formData.get('phone');
 
         const bundledText = `
-        New Online Class Request 
         Student name: ${studentName}
         Email: ${email}
         Phone: ${phone}

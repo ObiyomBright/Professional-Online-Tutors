@@ -88,8 +88,10 @@ nav {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding: 20px;
-    color: rgba(255, 255, 255, 0.865);
+    padding: 20px;  
+    color: white;
+    font-weight: 800;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 /* .sub-hero {
@@ -101,6 +103,7 @@ nav {
     font-size: 70px;
     font-weight: 800;
     margin-bottom: 20px;
+
 }
 
 .hero-content {
@@ -221,6 +224,7 @@ nav {
 
 .features li {
     list-style: none;
+    margin-bottom: 10px;
 }
 
 .services {
@@ -422,10 +426,6 @@ form button:active {
 
     nav h1 {
         font-size: 20px;
-        /* width: 70%;
-        margin-right: 10px;
-        display: flex;
-        flex-wrap: wrap; */
     }
 
     .nav-links {
@@ -474,6 +474,10 @@ form button:active {
         font-size: 20px;
     }
 
+    .section h2 {
+        font-size: 30px;
+    }
+
     .benefits-grid,
     .services-grid {
         display: flex;
@@ -489,9 +493,38 @@ form button:active {
     .service-card {
         width: 45%;
         box-sizing: border-box;
+        font-size: 18px;
+        text-align: center;
+        padding: 10px 5px;
     }
 
     .features {
-        margin: 30px 30px 30px 20%;
+        margin: 10px 15px;
+    }
+
+    .features li {
+        margin-bottom: 10px;
+    }
+
+    #contact {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    #contact h2 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 400px) {
+    .benefit-card,
+    .service-card {
+        font-size: 14px;
+    }
+
+    #contact {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
