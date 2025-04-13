@@ -236,6 +236,16 @@ nav {
     justify-self: center;
 }
 
+.serviceImg{
+    display: flex;
+    justify-self: center;
+    align-self: center;
+    height: 180px;
+    width: 180px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 2px solid #2b8ac9;
+}
 
 .section {
     padding: 80px 50px;
@@ -461,6 +471,10 @@ form button:active {
         display: flex;
     }
 
+    .hero {
+        height: 85vh;
+    }
+
     .hero-heading {
         font-size: 40px;
     }
@@ -516,7 +530,7 @@ form button:active {
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .benefit-card,
     .service-card {
         font-size: 14px;
