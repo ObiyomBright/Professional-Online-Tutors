@@ -95,6 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
         Class Duration: ${classDuration}
         Number of Section: ${numSections}   
     `.trim();
+        console.log(bundledText);
 
         //Send Bundled Text to Whatsapp
         whatsappApi(bundledText);
