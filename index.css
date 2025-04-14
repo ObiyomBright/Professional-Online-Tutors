@@ -78,7 +78,7 @@ nav {
 /* Hero */
 .hero {
     /* background: linear-gradient(white, gray, black); */
-    background:  linear-gradient(to bottom, rgba(0, 0, 0, 0.38), rgba(128, 128, 128, 0.477)), url('images/1743374378474.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.38), rgba(128, 128, 128, 0.477)), url('images/1743374378474.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -88,7 +88,7 @@ nav {
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    padding: 20px;  
+    padding: 20px;
     color: white;
     font-weight: 800;
 }
@@ -236,7 +236,13 @@ nav {
     justify-self: center;
 }
 
-.serviceImg{
+.services .services-grid .service-card {
+    text-align: center;
+    align-items: center;
+    display: flex;
+}
+
+.serviceImg {
     display: flex;
     justify-self: center;
     align-self: center;
@@ -259,7 +265,8 @@ nav {
     flex-direction: column;
     justify-content: center;
     border-radius: 15px;
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);}
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15);
+}
 
 .section h2 {
     font-size: 36px;
@@ -369,11 +376,13 @@ form input[type='tel'] {
     font-weight: 500;
 }
 
-.class-duration, .num-sections {
+.class-duration,
+.num-sections {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
 }
+
 /* 
  {
     display: block;
@@ -531,6 +540,7 @@ form button:active {
 }
 
 @media (max-width: 450px) {
+
     .benefit-card,
     .service-card {
         font-size: 14px;
@@ -539,5 +549,22 @@ form button:active {
     #contact {
         display: flex;
         flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 350px) {
+
+    .benefits-grid,
+    .services-grid {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .benefit-card,
+    .service-card {
+        width: 80%;
     }
 }
